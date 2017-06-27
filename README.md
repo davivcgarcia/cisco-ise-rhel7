@@ -39,7 +39,7 @@ To configure the host to use this script, please follow these steps as root:
 5. Add an entry to root's crontab to run the supplicant every 30 minutes:
 
 ```
-'# crontab -
+# crontab -
 */30 * * * * /opt/cisco-ise-rhel7-master/cisco-ise-rhel7-verifier.sh &> /opt/cisco-ise-rhel7-master/cron.log
 <CTRL+D>
 ```
