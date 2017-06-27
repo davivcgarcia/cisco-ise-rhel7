@@ -2,11 +2,11 @@
 
 ## About this repository
 
-This repository contains a very rudimentary prof-of-concept implementation of a supplicant that checks the firewall (**Firewalld**) and Mandatory-Access-Control (**SELinux**) subsystems of Red Hat Enterprise Linux, and injects a **custom DHCP Vendor-Class-Identifier** (**cisco-ise-compliant**/**cisco-ise-notcompliant**) into the public interface's DHClient configuration file, **consumed by NetworkManager**.
+This repository contains a very rudimentary proof-of-concept implementation of a supplicant that checks the firewall (**Firewalld**) and Mandatory Access Control (**SELinux**) subsystems of Red Hat Enterprise Linux, and injects a **custom DHCP Vendor-Class-Identifier** (**cisco-ise-compliant**/**cisco-ise-notcompliant**) into the interface configuration file, **consumed by NetworkManager** for DHCP Client.
 
 ## Restrictions of use
 
-The script was tested on Fedora Workstation 25 x86-64 and Red Hat Enterprise Linux (RHEL) 7.3 x86-64 but not exhaustively. **This script is not intended to be used in production, and will not be supported by Red Hat.**
+The script was tested on Fedora Workstation 25 x86-64 and Red Hat Enterprise Linux (RHEL) 7.3 x86-64, but not exhaustively. **This script is not intended to be used in production, and will not be supported by Red Hat.**
 
 ## How to setup
 
