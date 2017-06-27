@@ -27,7 +27,7 @@ To configure the host to use this script, please follow these steps as root:
 3. Make sure the 'cisco-ise-rhel7-verifier.sh' has execution permission:
 
 ```
-# chmod +x /opt/cisco-ise-rhel7-master/cisco-ise-rhel7-verifier.sh;
+# chmod +x /opt/cisco-ise-rhel7-master/cisco-ise-rhel7-verifier.sh
 ```
 
 4. Modify the INTERFACE parameter to the IP interface of your host (that will request DHCP);
