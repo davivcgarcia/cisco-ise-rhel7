@@ -1,6 +1,5 @@
 # PoC for cisco ISE Posture Enforcement on RHEL 7
 
-
 ## Objective
 
 This repository contains a very rudimentary prof-of-concept implementation of a supplicant that checks the firewall (**Firewalld**) and Mandatory-Access-Control (**SELinux**) subsystems of Red Hat Enterprise Linux, and injects a **custom DHCP Vendor-Class-Identifier** (**cisco-ise-compliant**/**cisco-ise-notcompliant**) into the public interface's DHClient configuration file, **consumed by NetworkManager**.
@@ -16,13 +15,13 @@ To configure the host to use this script, please follow these steps as root:
 1. Download this repository as a ZIP file:
 
 ```
-# wget https://github.com/davivcgarcia/cisco-ise-rhel7/archive/master.zip -O ~/
+# wget https://github.com/davivcgarcia/cisco-ise-rhel7/archive/master.zip -O ~/cisco-ise-rhel7-master.zip
 ```
 
 2. Unzip the package into the directory '/opt/':
 
 ```
-# cd /opt/ && unzip ~/cisco-ise-rhel7-master.zip
+# unzip /opt/cisco-ise-rhel7-master.zip
 ```
 
 3. Make sure the 'cisco-ise-rhel7-verifier.sh' has execution permission:
@@ -44,4 +43,3 @@ To configure the host to use this script, please follow these steps as root:
 */30 * * * * /opt/cisco-ise-rhel7-master/cisco-ise-rhel7-verifier.sh &> /opt/cisco-ise-rhel7-master/cron.log
 <CTRL+D>
 ```
-
